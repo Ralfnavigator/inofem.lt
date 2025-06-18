@@ -1,0 +1,100 @@
+// inofem.lt svetainė su React + Tailwind CSS
+
+import React from "react";
+
+export default function Home() {
+  return (
+    <main className="bg-white text-gray-900 font-sans">
+      <header className="bg-pink-100 py-10 px-4 text-center shadow-md">
+        <h1 className="text-3xl md:text-5xl font-bold text-pink-800">Inofem – natūralus maisto papildas moterims</h1>
+        <p className="mt-4 text-lg">Hormonų pusiausvyrai, ovuliacijai ir PCOS palaikymui</p>
+        <div className="mt-6 flex justify-center gap-4">
+          <a href="#apie" className="bg-pink-600 text-white px-6 py-2 rounded-xl">Sužinokite daugiau</a>
+          <a href="#pirkti" className="bg-white border border-pink-600 text-pink-600 px-6 py-2 rounded-xl">Pirkti dabar</a>
+        </div>
+      </header>
+
+      <section id="apie" className="py-16 px-6 max-w-4xl mx-auto">
+        <h2 className="text-2xl font-bold mb-4">Kas yra Inofem?</h2>
+        <p className="mb-4">Inofem yra maisto papildas moterims, skirtas palaikyti normalią hormonų veiklą, ypač sergant PCOS ar planuojant pastojimą. Jame yra 2000 mg mio-inozitolio ir 200 µg folio rūgšties vienoje saschetėje.</p>
+        <h3 className="text-xl font-semibold mt-6">Sudėtis:</h3>
+        <ul className="list-disc pl-6">
+          <li><strong>Mio-inozitas</strong> – 2000 mg</li>
+          <li><strong>Folio rūgštis</strong> (vitaminas B9) – 200 µg (100 % RPN)</li>
+        </ul>
+        <p className="mt-2">Be gliuteno, laktozės, cukraus ir konservantų. Tinka diabetikėms.</p>
+      </section>
+
+      <section className="bg-pink-50 py-16 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold mb-4">Nauda</h2>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Skatina natūralios ovuliacijos grįžimą (81 % moterų po 3 mėn.)</li>
+            <li>Pagerina insulino jautrumą</li>
+            <li>Reguliuoja menstruacijas</li>
+            <li>Mažina spuogus ir plaukų slinkimą</li>
+            <li>Palaiko vaisingumą</li>
+          </ul>
+
+          <h3 className="text-xl font-semibold mt-6">Klinikiniai tyrimai:</h3>
+          <ul className="list-disc pl-6">
+            <li>81 % – atstatyta ovuliacija</li>
+            <li>41 % – sumažėjęs insulino lygis</li>
+            <li>19 % – pagerėjęs LH/FSH santykis</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="py-16 px-6 max-w-4xl mx-auto">
+        <h2 className="text-2xl font-bold mb-4">Kaip vartoti</h2>
+        <ul className="list-disc pl-6 space-y-2">
+          <li>1 pakelį ištirpdyti stiklinėje vandens (~200 ml)</li>
+          <li>Vartoti kartą per dieną, geriausia ryte</li>
+          <li>Neviršyti nustatytos dozės</li>
+        </ul>
+        <p className="mt-2 font-semibold">Svarbu: pasitarkite su gydytoju, jei laukiatės ar žindote.</p>
+      </section>
+
+      <section className="bg-gray-100 py-16 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold mb-4">Dažnai užduodami klausimai (D.U.K.)</h2>
+          <div className="space-y-4">
+            <div>
+              <strong>Ar Inofem tinka planuojant pastoti?</strong>
+              <p>Taip, padeda kiaušialąsčių kokybei ir ovuliacijai.</p>
+            </div>
+            <div>
+              <strong>Ar tinka diabetikėms?</strong>
+              <p>Taip, be cukraus, padeda insulino reguliacijai.</p>
+            </div>
+            <div>
+              <strong>Ar turi šalutinį poveikį?</strong>
+              <p>Retai, gali pasitaikyti virškinimo diskomfortas pradžioje.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-6 max-w-4xl mx-auto">
+        <h2 className="text-2xl font-bold mb-4">Atsiliepimai</h2>
+        <div className="space-y-4">
+          <blockquote>"Po 2 mėn. ciklas tapo reguliarus. Esu labai patenkinta!" – Rasa, 29 m.</blockquote>
+          <blockquote>"Padėjo pastoti po kelių mėnesių bandymų. Ačiū!" – Eglė, 33 m.</blockquote>
+          <blockquote>"Sumažėjo spuogų ir pagerėjo nuotaika." – Viktorija, 26 m.</blockquote>
+        </div>
+      </section>
+
+      <section id="pirkti" className="bg-pink-50 py-16 px-6 text-center">
+        <h2 className="text-2xl font-bold mb-4">Kur įsigyti?</h2>
+        <p>Inofem galima įsigyti vaistinėse ir internetu:</p>
+        <a href="#" className="inline-block mt-4 bg-pink-600 text-white px-8 py-3 rounded-xl">Pirkti internetu</a>
+      </section>
+
+      <footer className="bg-gray-800 text-white py-10 px-6 text-center">
+        <p className="mb-2">Turite klausimų? Susisiekite:</p>
+        <p>info@inofem.lt | +370 600 00000</p>
+        <p className="text-sm mt-4">&copy; {new Date().getFullYear()} Inofem.lt</p>
+      </footer>
+    </main>
+  );
+}
